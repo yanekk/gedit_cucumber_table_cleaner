@@ -1,0 +1,10 @@
+[Gedit Plugin]
+Loader=python
+Module=cucumber_table_cleaner
+IAge=2
+Name=Cucumber Table Cleaner
+Description=Select whole table in cucumber and use Ctrl+Alt+| shortcut to clean it up.
+Authors=Jan Królikowski <yanekk86@gmail.com>
+Copyright=Copyright © 2010 Jan Królikowski <yanekk86@gmail.com>
+Website=http://github.com/yanekk/cucumber-table-cleaner
+
