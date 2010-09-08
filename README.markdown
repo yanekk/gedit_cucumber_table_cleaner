@@ -43,10 +43,10 @@ Installation
 ============
 1. Ensure gedit is installed
 2. Fetch plugin from git repository
-    git clone git://github.com/yanekk/gedit_cucumber_table_cleaner.git
+    *   `git clone git://github.com/yanekk/gedit_cucumber_table_cleaner.git`
 3. Install it with installation script
-    cd gedit_cucumber_table_cleaner
-    ./install.sh
+    *   `cd gedit_cucumber_table_cleaner`
+    *   `./install.sh`
 4. Select plugin's checkbox in gedit's Preferences window
 5. Have fun with cleaning up cucumber tables
 
