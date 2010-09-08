@@ -41,6 +41,7 @@ By selecting desired table and clicking __Ctrl + Shift + |__ , table became easi
 
 Installation
 ============
+
 1. Ensure gedit is installed
 2. Fetch plugin from git repository
     *   `git clone git://github.com/yanekk/gedit_cucumber_table_cleaner.git`
