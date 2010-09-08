@@ -21,7 +21,7 @@ Cucumber Table Cleaner is a Gedit/Gmate plugin for cleaning up every table withi
 
 *Example taken from http://railscasts.com/episodes/159-more-on-cucumber*
 
-By selecting desired table and clicking Ctrl + Shift + | , table became easier to read:
+By selecting desired table and clicking __Ctrl + Shift + |__ , table became easier to read:
 
       Scenario Outline: Show or hide edit profile link
         Given the following user records
