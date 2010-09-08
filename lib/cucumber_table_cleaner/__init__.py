@@ -8,23 +8,23 @@ class CucumberTableCleanerPlugin(gedit.Plugin):
         pass
 
     def key_pressed(self, window, event):
-        if (event.state & gtk.gdk.CONTROL_MASK) and (event.state & gtk.gdk.SHIFT_MASK) and (event.keyval == 124):
+        if (event.state & gtk.gdk.CONTROL_MASK) and (event.state & gtk.gdk.SHIFT_MASK) and (event.keyval == 124): # Ctrl + Shift + |
             try:
                 document = window.get_active_document()
                 from_marker, to_marker = document.get_selection_bounds()
 
                 from_marker.backward_line()
-                from_marker.forward_line() #dirty hack to go to the beggining of line
+                from_marker.forward_line() # dirty hack to go to the beggining of line
 
                 to_marker.forward_line()
-                to_marker.backward_line()
+                #to_marker.backward_line()
 
                 cleaned = CucumberTableCleaner.clean(from_marker.get_slice(to_marker))
                 document.delete(from_marker, to_marker)
                 document.insert(from_marker, cleaned)
-#                print cleaned
+
             except ValueError:
-                pass # no selection
+                pass # no selection set
 
         return False
         pass
@@ -36,9 +36,9 @@ class CucumberTableCleanerPlugin(gedit.Plugin):
 
 """
     Examples:
-    | first_arg | second_arg | please | dont | hurt | me|
-    | i | am | just | a | simple | man |
-    |bleah|i|drop|this|shit|
+    |first_arg|  second_arg  |  please  |  dont  |  hurt  |  me |
+    |i|      am      |   just   |   a    | simple | man |
+    |bleah|      i       |   drop   |  this  |  shit  |
 |indentation|fail|will|crush|you|
 """
 
